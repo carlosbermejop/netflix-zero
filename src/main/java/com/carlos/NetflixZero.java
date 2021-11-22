@@ -2,12 +2,10 @@ package com.carlos;
 
 import java.util.Locale;
 import java.util.Scanner;
-
-import com.carlos.Exceptions.MoviesException;
 import com.carlos.Movies.MoviesManager;
 
 public class NetflixZero {
-    public static void main(String[] args) throws MoviesException {
+    public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
         System.out.println("Welcome to Netflix Zero. Please, choose what do you want to do:\n1. Add\n2. Remove\n3. List");
         String userAction = userInput.nextLine();
@@ -24,6 +22,5 @@ public class NetflixZero {
             default:
                 System.out.println("I couldn't understand you, please choose what do you want to do:\n1. Add\n2. Remove\n3. List");
         }
-
     }
 }
